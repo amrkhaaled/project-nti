@@ -40,4 +40,22 @@
       img.classList.add("active");
     });
   });
-  
+  function initScrollToTop() {
+    const scrollBtn = document.createElement('button');
+    scrollBtn.className = 'scroll-to-top';
+    scrollBtn.innerHTML = '<i class="bi bi-arrow-up"></i>';
+    scrollBtn.onclick = () => window.scrollTo({ top: 0, behavior: 'smooth' });
+    document.body.appendChild(scrollBtn);
+
+    window.addEventListener('scroll', () => {
+        if (window.pageYOffset > 350) {
+            scrollBtn.classList.add('show');
+        } else {
+            scrollBtn.classList.remove('show');
+        }
+    });
+}
+
+document.addEventListener('DOMContentLoaded', initScrollToTop);
+
+

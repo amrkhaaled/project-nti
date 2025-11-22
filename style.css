@@ -386,15 +386,6 @@ display: flex;
     bottom: 20px;
     left: 23%;
 }
-
-.scroll-to-top:hover {
-    background: #4a00b8;
-    transform: translateY(-3px);
-}
-
-.scroll-to-top.show {
-    display: flex;
-}
 .hd .hide{
     display: flex;
     flex-direction: column;
@@ -435,6 +426,7 @@ transform: scale(1.1);
   }
   .home-page img{
     height: 15rem;
+    margin: auto !important;
   }
   .home-page{
     display: none;
@@ -443,3 +435,29 @@ transform: scale(1.1);
     
         display:block ;
   }
+ .scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #000;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s;
+}
+
+.scroll-to-top:hover {
+    transform: translateY(-3px);
+}
+
+.scroll-to-top.show {
+    display: flex;
+}

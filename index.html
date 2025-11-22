@@ -27,37 +27,13 @@
                             <button class="btn btn-light dropdown-toggle border-end-0 rounded-start" type="button" data-bs-toggle="dropdown" id="categoryDropdown">
                                 All Categories
                             </button>
-                            <ul class="dropdown-menu" aria-labelledby="categoryDropdown">
-                                <li><a class="dropdown-item" href="#" onclick="selectCategory('All Categories', this); return false;">All Categories</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="#" onclick="selectCategory('Fashion', this); return false;">Fashion</a></li>
-                                <li><a class="dropdown-item" href="#" onclick="selectCategory('Phone & Tablet', this); return false;">Phone & Tablet</a></li>
-                                <li><a class="dropdown-item" href="#" onclick="selectCategory('Laptop & Computer', this); return false;">Laptop & Computer</a></li>
-                                <li><a class="dropdown-item" href="#" onclick="selectCategory('TV, Audio - Video', this); return false;">TV, Audio - Video</a></li>
-                                <li><a class="dropdown-item" href="#" onclick="selectCategory('Home & Decor', this); return false;">Home & Decor</a></li>
-                                <li><a class="dropdown-item" href="#" onclick="selectCategory('Beauty & Health', this); return false;">Beauty & Health</a></li>
-                                <li><a class="dropdown-item" href="#" onclick="selectCategory('Game Accessories', this); return false;">Game Accessories</a></li>
-                                <li><a class="dropdown-item" href="#" onclick="selectCategory('Autopart', this); return false;">Autopart</a></li>
-                            </ul>
                             <input type="text" class="form-control border-start-0 border-end-0" placeholder="Search for products..." id="search-input">
                             <button class="btn btn-dark rounded-end" type="button" onclick="performSearch()">
                                 <i class="bi bi-search"></i>
                             </button>
                         </div>
                         <div class="popular-search mt-2" id="popular-search" style="display: none;">
-                            <span class="fw-bold small">Popular search:</span>
-                            <div class="d-flex flex-wrap gap-2 mt-1">
-                                <button class="btn btn-sm btn-outline-secondary rounded-pill" onclick="quickSearch('smartphone')">smartphone</button>
-                                <button class="btn btn-sm btn-outline-secondary rounded-pill" onclick="quickSearch('tablet')">tablet</button>
-                                <button class="btn btn-sm btn-outline-secondary rounded-pill" onclick="quickSearch('controller')">controller</button>
-                                <button class="btn btn-sm btn-outline-secondary rounded-pill" onclick="quickSearch('furniture')">furniture</button>
-                                <button class="btn btn-sm btn-outline-secondary rounded-pill" onclick="quickSearch('laptop')">laptop</button>
-                                <button class="btn btn-sm btn-outline-secondary rounded-pill" onclick="quickSearch('playstation')">playstation</button>
-                                <button class="btn btn-sm btn-outline-secondary rounded-pill" onclick="quickSearch('womens fashion')">womens fashion</button>
-                                <button class="btn btn-sm btn-outline-secondary rounded-pill" onclick="quickSearch('home & decor')">home & decor</button>
-                                <button class="btn btn-sm btn-outline-secondary rounded-pill" onclick="quickSearch('camera')">camera</button>
-                            </div>
-                        </div>
+                            <span class="fw-bold small">Popular search:</span>                        </div>
                     </div>
                 </div>
                 <div class="col-md-3 text-end">
@@ -114,7 +90,7 @@
                     <li class="nav-item"><a class=" nav-link text-black" href="#">Home</a></li>
                 <section class="home-page">
         <div class="container">
-            <div class="row d-flex justify-content-center pt-4 mt-4">
+            <div class="row d-flex justify-content-center pt-4 mt-4 " >
                 <div class="col-lg-3 ">
                     <a class="" href="#" style="text-decoration: none;">
                         <img src="images/mega-home-1.jpg" class="w-100" alt="">
@@ -664,25 +640,25 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-3 mb-4">
-                    <h5 class="mb-3">Merto</h5>
+                    <img src="images/logo (1).png" class="w-25" alt="">
                     <p class="text-muted">Your trusted online shopping destination for quality products at great prices.</p>
                 </div>
                 <div class="col-md-3 mb-4">
-                    <h6 class="mb-3">Quick Links</h6>
+                    <h6 class="mb-3" style="font-weight: 600;">Shopping</h6>
                     <ul class="list-unstyled">
-                        <li><a href="#" class="text-muted text-decoration-none">About Us</a></li>
-                        <li><a href="#" class="text-muted text-decoration-none">Contact Us</a></li>
-                        <li><a href="#" class="text-muted text-decoration-none">Blog</a></li>
-                        <li><a href="#" class="text-muted text-decoration-none">Privacy Policy</a></li>
+                        <li><a href="#" class=" text-decoration-none text-white">Wishlist</a></li>
+                        <li><a href="#" class=" text-decoration-none text-white">Shop by Brand</a></li>
+                        <li><a href="#" class=" text-decoration-none text-white">Offers</a></li>
+                        <li><a href="#" class=" text-decoration-none text-white">Track order</a></li>
                     </ul>
                 </div>
                 <div class="col-md-3 mb-4">
-                    <h6 class="mb-3">Categories</h6>
+                    <h6 class="mb-3">INFORMATION</h6>
                     <ul class="list-unstyled">
-                        <li><a href="#" class="text-muted text-decoration-none">Fashion</a></li>
-                        <li><a href="#" class="text-muted text-decoration-none">Electronics</a></li>
-                        <li><a href="#" class="text-muted text-decoration-none">Home & Decor</a></li>
-                        <li><a href="#" class="text-muted text-decoration-none">Beauty & Health</a></li>
+                        <li><a href="#" class=" text-decoration-none text-white">Track order</a></li>
+                        <li><a href="#" class=" text-decoration-none text-white">Shipping & Returns</a></li>
+                        <li><a href="#" class=" text-decoration-none text-white">About us</a></li>
+                        <li><a href="#" class=" text-decoration-none text-white">Help</a></li>
                     </ul>
                 </div>
                 <div class="col-md-3 mb-4">
@@ -704,53 +680,9 @@
         </div>
     </footer>
 
-    <!-- Cart Offcanvas -->
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="cartOffcanvas">
-        <div class="offcanvas-header border-bottom">
-            <h5 class="offcanvas-title fw-bold">Shopping Cart (<span id="cart-items-count">0</span> items)</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
-        </div>
-        <div class="offcanvas-body d-flex flex-column">
-            <div id="cart-items" class="flex-grow-1 overflow-auto">
-                <p class="text-muted text-center py-5">Your cart is empty</p>
-            </div>
-            <div class="mt-auto pt-3 border-top">
-                <div class="d-flex justify-content-between mb-2">
-                    <span>Subtotal:</span>
-                    <strong id="cart-subtotal">$0.00</strong>
-                </div>
-                <div class="d-flex justify-content-between mb-3">
-                    <span>Shipping:</span>
-                    <strong id="cart-shipping">Free</strong>
-                </div>
-                <div class="d-flex justify-content-between mb-3 border-top pt-2">
-                    <strong>Total:</strong>
-                    <strong class="fs-5 text-primary" id="cart-total">$0.00</strong>
-                </div>
-                <button class="btn btn-primary w-100 mb-2" onclick="proceedToCheckout()">Proceed to Checkout</button>
-                <button class="btn btn-outline-secondary w-100" data-bs-dismiss="offcanvas">Continue Shopping</button>
-            </div>
-        </div>
-    </div>
-
-    <!-- Quick View Modal -->
-    <div class="modal fade" id="quickViewModal" tabindex="-1">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Quick View</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                </div>
-                <div class="modal-body" id="quick-view-content">
-                    <!-- Content will be added by JavaScript -->
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Bootstrap JS -->
+   
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Custom JS -->
+  
     <script src="script.js"></script>
 </body>
 </html>
