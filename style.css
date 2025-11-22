@@ -433,4 +433,13 @@ transform: scale(1.1);
     border-color: black;
     transform: scale(1.05);
   }
-  
+  .home-page img{
+    height: 15rem;
+  }
+  .home-page{
+    display: none;
+  }
+  .h:hover .home-page{
+    
+        display:block ;
+  }
